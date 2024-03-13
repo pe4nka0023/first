@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
-//task 1
+        //task 1
         byte b = 12;
         short s = 2525;
         int i = 19200393;
@@ -30,12 +29,13 @@ public class Main {
         byte ea = 30;
         short total = 480;
         System.out.println(total / (lp + as + ea));
+        int totallist = total / (lp + as + ea);
+        System.out.println("На каждого ученика рассчитано " + totallist + " листов бумаги");
 
         //task 4
         byte performanceIn2Minutes = 16;
-        byte performance = (byte) (performanceIn2Minutes / 2);
-        short perf20min = (short) (performance * 20);
-        int perf24hour = performance * 60 * 24;
+        short perf20min = (short) (performanceIn2Minutes * 10);
+        int perf24hour = performanceIn2Minutes * 720;
         int perf3days = perf24hour * 3;
         int perfMonth = perf24hour * 30;
         System.out.println("За 20 минут машина произвела " + perf20min + "штук бутылок");
@@ -55,7 +55,7 @@ public class Main {
 
         //task 6
         int bananas = 5 * 80;
-        int milk = 200 / 100 + 105;
+        int milk = 210;
         int iceCream = 2 * 100;
         int eags = 4 * 70;
         int totalGrams = bananas + milk + iceCream + eags;
@@ -89,11 +89,11 @@ public class Main {
         double difMasha = mashaInkForYear - mashaForYear;
         double difDenis = denisInkForYear - denisForYear;
         double difKristina = kristinaInkForYear - kristinaForYear;
-        System.out.println("Маша теперь получает " + mashaInkForYear + " рублей. Годовой доход вырос на " + difMasha +
+        System.out.println("Маша теперь получает " + mashaInc + " рублей. Годовой доход вырос на " + difMasha +
                 " рублей");
-        System.out.println("Денис теперь получает " + denisInkForYear + " рублей. Годовой доход вырос на " + difDenis +
+        System.out.println("Денис теперь получает " + denisInc + " рублей. Годовой доход вырос на " + difDenis +
                 " рублей");
-        System.out.println("Кристина теперь получает " + kristinaInkForYear + " рублей. Годовой доход вырос на " + difKristina +
+        System.out.println("Кристина теперь получает " + kristinaInc + " рублей. Годовой доход вырос на " + difKristina +
                 " рублей");
 
 
